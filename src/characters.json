@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "image": "/images/BirdPerson.png",
+    "name": "Bird"
+  },
+  {
+    "id": 2,
+    "image": "./images/Chris.png",
+    "name": "Chris"
+  },
+  {
+    "id": 3,
+    "image": "./images/DoofusRick.png",
+    "name": "DoofusRick"
+  },
+  {
+    "id": 4,
+    "image": "./images/Gazorpazorpfield.png",
+    "name": "Gazorpazorpfield"
+  },
+  {
+    "id": 5,
+    "image": "./images/Jerry.png",
+    "name": "Jerry"
+  },
+  {
+    "id": 6,
+    "image": "./images/linkler.png",
+    "name": "linkler"
+  },
+  {
+    "id": 7,
+    "image": "./images/Morty.png",
+    "name": "Morty"
+  },
+  {
+    "id": 8,
+    "image": "./images/MrMeeseeks.png",
+    "name": "MrMeeseeks"
+  },
+  {
+    "id": 9,
+    "image": "./images/PencilVester.png",
+    "name": "PencilVester"
+  },
+  {
+    "id": 10,
+    "image": "./images/Rick.png",
+    "name": "Rick"
+  },
+  {
+    "id": 11,
+    "image": "./images/Snuffles.png",
+    "name": "Snuffles"
+  },
+  {
+    "id": 12,
+    "image": "./images/Summer.png",
+    "name": "Summer"
+  }
+]
