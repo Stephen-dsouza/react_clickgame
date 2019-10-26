@@ -4,7 +4,7 @@ import "./main.css";
 const CharacterCard = props => {
   return (
     <div className="card">
-      <div className="img-container">
+      <div onClick={() => props.handleClick(props)} className="img-container">
         <img alt={props.name} src={props.image} />
       </div>
       <div className="content">
