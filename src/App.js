@@ -11,13 +11,62 @@ class App extends React.Component {
     guessClick: [],
     message: "Click to start"
   };
-  clickcard = data => {
-    console.log("CLICKED", data);
+
+  handleCorrectGuess = newData => {
+    const { topScore, score } = this.state;
+    const newScore = score + 1;
+    const newTopScore = Math.max(newScore, topScore);
+    this.setState({
+      score: newScore,
+      topScore: newTopScore
+    });
   };
+
+  handleIncorrectGuess = newData => {
+    this.setState({
+      score: 0,
+      guessClick: [],
+      message: "You lost,Try Again"
+    });
+  };
+
+  clickcard = id => {
+    console.log(id);
+
+    let guessClick = this.state.guessClick;
+    let guessed = guessClick.find(item => {
+      return item === id;
+    });
+    if (guessed) {
+      this.handleIncorrectGuess();
+    } else {
+      guessClick.push(id);
+
+      this.setState({
+        guessClick: guessClick,
+        message: "Good Guess"
+      });
+      this.handleCorrectGuess();
+    }
+
+    // message: "Good Guess",
+    //   topScore:
+    //     this.setState.score > this.state.topScore
+    //       ? this.state.topScore
+    //       : this.topScore
+
+    // }
+    console.log(this.state);
+  };
+
   render() {
     return (
       <div>
-        <Navbar score={this.state.score} topScore={this.state.topScore}/>
+        <Navbar
+          score={this.state.score}
+          topScore={this.state.topScore}
+          message={this.state.message}
+        />
         <Header />
         <Wrapper>
           {Characters.map(character => (

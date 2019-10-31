@@ -4,7 +4,9 @@ const Navbar = props => {
   return (
     <div className="navbar navbar-dark bg-dark box-shadow">
       <h1>click game</h1>
-      <span className="message">ttt{props.message}</span>
+      <span className="message">
+        <h2 >{props.message}</h2>
+      </span>
       Your Score:{props.score}|Top Score:{props.topScore}
     </div>
   );
