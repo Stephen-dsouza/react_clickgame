@@ -1,4 +1,5 @@
 import React from "react";
+
 import Navbar from "./components/Navbar/navbar";
 import Header from "./components/Header/header";
 import Main from "./components/main/main";
@@ -9,7 +10,8 @@ class App extends React.Component {
     score: 0,
     topScore: 0,
     guessClick: [],
-    message: "Click to start"
+    message: "Click to start",
+    Characters
   };
 
   handleCorrectGuess = newData => {
@@ -68,8 +70,9 @@ class App extends React.Component {
           message={this.state.message}
         />
         <Header />
+
         <Wrapper>
-          {Characters.map(character => (
+          {Characters.sort(() => 0.5 - Math.random()).map(character => (
             <Main
               id={character.id}
               key={character.id}
