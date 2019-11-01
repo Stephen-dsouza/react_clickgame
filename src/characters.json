@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "/images/BirdPerson.png",
+    "image": "./images/BirdPerson.png",
     "name": "Bird"
   },
   {
