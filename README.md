@@ -6,7 +6,7 @@ Memory game built with React.
 
 ## Live App:
 
-[Check out the live app here]()
+[Check out the live app here](https://stephen-dsouza.github.io/react_clickgame/)
 
 ### Overview
 
